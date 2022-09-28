@@ -1,28 +1,24 @@
 /* fonts imported */
 @font-face {
-  font-family: futura-bt-light;
-  src: url(./fonts/futura/futura\ light\ bt.ttf);
+  font-family: poppins-light;
+  src: url(./fonts/poppins/Poppins-Light.otf);
 }
 
 @font-face {
-  font-family: futura-bt-medium;
-  src: url(./fonts/futura/futura\ medium\ bt.ttf);
+  font-family: poppins-extra-light;
+  src: url(./fonts/poppins/Poppins-ExtraLight.otf);
 }
 
 @font-face {
-  font-family: futura-bt-bold;
-  src: url(./fonts/futura/Futura\ XBlk\ BT.ttf);
+  font-family: poppins-thin;
+  src: url(./fonts/poppins/Poppins-Thin.otf);
 }
 
 @font-face {
-  font-family: futura-lt-italic;
-  src: url(./fonts/futura/futura\ light\ Italic\ font.ttf);
+  font-family: poppins-regular;
+  src: url(./fonts/poppins/Poppins-Regular.otf);
 }
 
-@font-face {
-  font-family: futura-bt-italic;
-  src: url(./fonts/futura/Futura\ Bold\ Italic\ font.ttf);
-}
 
 /* page style */
 * {
@@ -34,10 +30,10 @@
 }
 
 body {
-  background-color: #efe0e0;
+  background-color: #eaeaea;
   color: white;
   overflow-x: hidden;
-  font-family: futura-bt-medium;
+  font-family: poppins-light;
 }
 
 header {
@@ -87,7 +83,7 @@ header {
 }
 
 .top-nav .active {
-  font-family: futura-bt-bold;
+  font-weight: bold;
 }
 
 .hero {
@@ -127,6 +123,7 @@ header {
 
 
 .about {
+  font-family: poppins-thin;
   display: flex;
   flex-direction: column;
 }
@@ -135,6 +132,16 @@ header {
   display: flex;
   height: 30rem;
   color: black;
+  margin: 0 0 4rem 14rem;
+}
+
+.about .top .about-head h1{
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.about .top .about-head h1 .head-light{
+  font-family: poppins-light;
 }
 
 .about .bottom{
@@ -148,20 +155,78 @@ header {
   background-color: #ffffff;
   color: black;
   padding: 2rem;
-  margin: 0 0 4rem 5rem;
+  margin: 0 0 4rem 14rem;
   position: relative;
   width: 45%;
+  height: 50rem;
+  top: -50%;
+}
+
+.about .bottom .left p{
+  margin-top: 2rem;
 }
 
 .about .bottom .right{
   position: relative;
-  top: -50%;
+  top: -100%;
+  left: 15%;
   width: 35%;
+  height: 80rem;
+  display: flex;
+  justify-content: end;
+  overflow-x:hidden ;
 }
 
-.about .bottom .right img{
-  border: 2px solid red;
+.quote{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  color: black;
+  font-family: poppins-thin;
+  font-size: 3rem;
 }
+
+.quote .quote-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.quote .quote-section .quote-icon{
+  width: 10%;
+}
+
+.quote .quote-section .quote-text{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.quote .quote-section .foundation-button {
+  width: 80%;
+  text-align: center;
+}
+
+.quote .quote-section .foundation-button a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #4c4b4b;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.quote .quote-section .foundation-button a:hover{
+  background-color: black; 
+}
+
+.quote .adinkra-symbol{
+  width: 20%;
+}
+
 
 footer {
   background-color: rgb(23, 23, 23);
