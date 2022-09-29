@@ -32,8 +32,8 @@
 body {
   background-color: #eaeaea;
   color: white;
-  overflow-x: hidden;
   font-family: poppins-light;
+  overflow-x: hidden;
 }
 
 header {
@@ -114,6 +114,8 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .hero .get-started img{
@@ -160,6 +162,7 @@ header {
   width: 45%;
   height: 50rem;
   top: -50%;
+  font-family: poppins-light;
 }
 
 .about .bottom .left p{
@@ -169,13 +172,14 @@ header {
 .about .bottom .right{
   position: relative;
   top: -100%;
-  left: 15%;
+  left: 16%;
   width: 35%;
   height: 80rem;
   display: flex;
   justify-content: end;
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
+
 
 .quote{
   display: flex;
@@ -197,6 +201,14 @@ header {
 
 .quote .quote-section .quote-icon{
   width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote .quote-section .quote-icon img{
+  position: relative;
+  top: -23%;
 }
 
 .quote .quote-section .quote-text{
@@ -205,54 +217,220 @@ header {
   width: 80%;
 }
 
-.quote .quote-section .foundation-button {
+.quote .quote-section .quote-text .foundation-button {
   width: 80%;
   text-align: center;
+  position: relative;
+  left: 20%;
 }
 
-.quote .quote-section .foundation-button a{
+.quote .quote-section .quote-text .foundation-button a{
   display: block;
   text-decoration: none;
   color: white;
   background-color: #4c4b4b;
   font-size: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.quote .quote-section .foundation-button a:hover{
+.quote .quote-section .quote-text .foundation-button a:hover{
   background-color: black; 
 }
 
 .quote .adinkra-symbol{
   width: 20%;
+  position: relative;
+  left: 5%;
 }
 
 
-footer {
-  background-color: rgb(23, 23, 23);
+.publications{
+  background-color: rgb(53, 53, 52);
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem 4rem 14rem;
+}
+
+.publications .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+  margin: 10rem 2rem 5rem 0;
+}
+
+.publications h3{
+  color: #398FFC;
+}
+
+.publications a, .publications p {
+  font-family: poppins-regular;
+}
+.publications .left .top, .publications .left .middle, .publications .left .bottom{
+  display: flex;
+  flex-direction: row;
+}
+
+.publications .left .top-icon{
+  margin-right: 4rem;
+}
+
+.publications .left .middle-icon{
+  margin-right: 6.1rem;
   position: relative;
+  left: 2%;
+}
+
+.publications .left .bottom-icon{
+  margin-right: 3rem;
+}
+
+.publications .left a{
+  text-decoration: none;
+  color: white;
+  padding: .5rem;
+  background-color: #398FFC;
+  position: relative;
+  left: 86%;
+  font-size: .9rem;
+}
+
+.publications .left a:hover{
+  background-color: #FA7D0f;
+}
+
+.publications .right{
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 7rem 2rem 7rem;
-  margin-top: 10rem;
-  font-family: futura-bt-medium;
+  margin-right: 7rem;
 }
 
-footer .bottom {
+.publications .right .right-video{
+  width: 100%;
+}
+
+.publications .right .right-video #smile-video{
+  width: 100%;
+}
+
+.distinction{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  color: black;
+  font-family: poppins-thin;
+  font-size: 2rem;
+}
+
+.distinction .distinction-quote{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.distinction .distinction-quote .distinction-quote-icon{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.distinction .distinction-quote .distinction-quote-icon img{
+  position: relative;
+  top: -10%;
+}
+
+.distinction .distinction-quote .distinction-quote-text{
+  width: 80%;
+}
+
+.distinction .distinction-symbol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+  font-family: poppins-regular;
+}
+
+.distinction .distinction-button{
+  margin-top: 1rem;
+}
+
+.distinction .distinction-symbol .distinction-button a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  background-color: #171717;
+  padding: .5rem 1rem ;
+}
+
+.distinction .distinction-symbol .distinction-button a:hover{
+  background-color: #4c4b4b;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  background-color: #FA7D0f;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  font-family: poppins-extra-light;
+}
+
+.contact .contact-img{
+  width: 30%;
+}
+
+.contact .contact-text{
+  font-size: 2rem;
+}
+
+.contact .contact-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact .contact-text a:hover{
+  color: #171717;
+}
+
+.contact .contact-text .contact-socials{
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #4c4b4b;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   width: 100%;
-  border-top: 2px solid gray;
-  padding-top: 3rem;
+  padding: 3rem;
 }
 
-footer .bottom .copyright {
+footer .copyright a{
+  color: white;
+  text-decoration: none;
+}
+
+footer .copyright a:hover{
+  color: #FA7D0f;
+}
+
+footer .copyright {
   width: 100%;
   margin-left: 3.5rem;
-
+  padding: 1rem 3%;
 }
 
 footer .bottom-nav {
@@ -278,7 +456,7 @@ footer .bottom-nav ul li a:hover {
 }
 
 footer .bottom-nav .active {
-  font-family: futura-bt-bold;
+  font-weight: bold;
 }
 
 
