@@ -140,6 +140,7 @@ header {
 .about .top .about-head h1{
   font-size: 3rem;
   line-height: 3.5rem;
+  font-weight: 100;
 }
 
 .about .top .about-head h1 .head-light{
@@ -150,18 +151,18 @@ header {
   background: url(../images/Textile_background.png);
   display: flex;
   flex-direction: row;
-  height: 40rem;
+  height: 41rem;
 }
 
 .about .bottom .left{
   background-color: #ffffff;
   color: black;
-  padding: 2rem;
+  padding: 0 2rem;
   margin: 0 0 4rem 14rem;
   position: relative;
   width: 45%;
-  height: 50rem;
-  top: -50%;
+  height: 55rem;
+  top: -43%;
   font-family: poppins-light;
 }
 
@@ -171,15 +172,14 @@ header {
 
 .about .bottom .right{
   position: relative;
-  top: -100%;
-  left: 16%;
+  top: -95.2%;
+  left: 4%;
   width: 35%;
   height: 80rem;
   display: flex;
   justify-content: end;
   overflow-x: hidden;
 }
-
 
 .quote{
   display: flex;
@@ -189,8 +189,9 @@ header {
   padding: 8rem;
   color: black;
   font-family: poppins-thin;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
+
 
 .quote .quote-section{
   display: flex;
@@ -218,10 +219,10 @@ header {
 }
 
 .quote .quote-section .quote-text .foundation-button {
-  width: 80%;
+  width: 83%;
   text-align: center;
   position: relative;
-  left: 20%;
+  left: 17%;
 }
 
 .quote .quote-section .quote-text .foundation-button a{
@@ -230,12 +231,12 @@ header {
   color: white;
   background-color: #4c4b4b;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: 2rem;
 }
 
 .quote .quote-section .quote-text .foundation-button a:hover{
-  background-color: black; 
+  background-color: #FA7D0f; 
 }
 
 .quote .adinkra-symbol{
@@ -244,9 +245,13 @@ header {
   left: 5%;
 }
 
+.quote .adinkra-symbol img{
+  width: 100%;
+}
+
 
 .publications{
-  background-color: rgb(53, 53, 52);
+  background-color: #353534;
   display: flex;
   flex-direction: row;
   padding: 2rem 2rem 4rem 14rem;
@@ -256,8 +261,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 65%;
-  margin: 10rem 2rem 5rem 0;
+  width: 60%;
+  margin: 10rem 4rem 5rem 0;
+}
+
+.publications .left .middle, .publications .left .bottom{
+  margin-top: 4rem;
 }
 
 .publications h3{
@@ -289,7 +298,7 @@ header {
 .publications .left a{
   text-decoration: none;
   color: white;
-  padding: .5rem;
+  padding: .3rem;
   background-color: #398FFC;
   position: relative;
   left: 86%;
@@ -301,7 +310,7 @@ header {
 }
 
 .publications .right{
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,6 +324,15 @@ header {
 
 .publications .right .right-video #smile-video{
   width: 100%;
+}
+
+.publications .right .right-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.publications .right .right-logo img {
+  width: 80%;
 }
 
 .distinction{
@@ -374,7 +392,7 @@ header {
 }
 
 .distinction .distinction-symbol .distinction-button a:hover{
-  background-color: #4c4b4b;
+  background-color: #398FFC;
 }
 
 .contact{
@@ -388,11 +406,17 @@ header {
 }
 
 .contact .contact-img{
+  display: flex;
   width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact .contact-text{
+  width: 65%;
   font-size: 2rem;
+  padding-left: 5rem;
 }
 
 .contact .contact-text a {
@@ -408,11 +432,12 @@ header {
   margin-top: 2rem;
 }
 
+
 footer {
   background-color: #4c4b4b;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
   padding: 3rem;
@@ -443,7 +468,7 @@ footer .bottom-nav {
 
 footer .bottom-nav ul li {
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 footer .bottom-nav ul li a {
