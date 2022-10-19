@@ -186,7 +186,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 8rem;
+  padding: 5rem;
   color: black;
   font-family: poppins-thin;
   font-size: 2rem;
@@ -345,7 +345,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 8rem;
+  padding: 5rem;
   color: black;
   font-family: poppins-thin;
   font-size: 1.5rem;
